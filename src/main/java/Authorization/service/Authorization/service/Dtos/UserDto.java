@@ -1,15 +1,15 @@
-package Authorization.service.Authorization.service.Models;
+package Authorization.service.Authorization.service.Dtos;
 
 import Authorization.service.Authorization.service.Enum.Authorities;
 
 import java.util.List;
 
-public class UserEntity {
+public class UserDto {
     private String login;
     private String password;
     private List<Authorities> rights;
 
-    public UserEntity(String login, String password, List<Authorities> rights){
+    public UserDto(String login, String password, List<Authorities> rights){
         this.login = login;
         this.password = password;
         this.rights = rights;
